@@ -48,6 +48,21 @@ body {
     padding-right: 16px;
 }
 
+@media screen and (mix-width: 380px) {
+    .container {
+        overflow-x: hidden;
+    }
+}
+
+@media screen and (max-width: 427px) {
+    .container {
+        justify-content: center;
+    }
+
+    .list-distination {
+        justify-content: center;
+    }
+}
 @media screen and (min-width: 428px) {
     .container {
         width: 428px;
@@ -62,7 +77,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
     .container {
         width: 1160px;
     }
@@ -113,6 +128,14 @@ button:focus {
     .menu-list-none {
         display: none;
     }
+
+     .social-list-margin {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 48px;
+        width: -webkit-fill-available;
+        gap: 24px;
+    }
 }
 
 .page-header {
@@ -135,10 +158,12 @@ button:focus {
     border: none;
     padding: 0;
     line-height: 0;
-    width: 32px;
-    height: 22px;
+    /* width: 32px;
+    height: 22px; */
+    /* width: 82px;
+    height: 42px; */
     top: 0;
-    right: 0;
+    right: 8px;
 }
 
 .mobile-menu {
@@ -160,14 +185,16 @@ button:focus {
 }
 
 .mobile-menu-container {
-    padding-left: 24px;
+    padding-left: 16px;
     padding-top: 80px;
+    position: relative;
+    height: 100%;
 }
 
 .mobile-menu-close-bnt {
     position: absolute;
     top: 32px;
-    right: 32px;
+    right: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -237,7 +264,6 @@ button:focus {
     display: flex;
     justify-content: space-between;
     gap: 24px;
-    margin-top: 48px;
 }
 
 .social-list-link {
@@ -298,6 +324,18 @@ button:focus {
         padding: 0;
     }
 
+    .menu-list-margin {
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+
+    .page-header-container-top {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
     .padding-none {
         display: flex;
         align-items: center;
@@ -305,6 +343,7 @@ button:focus {
         gap: 40px;
         padding: 24px 0;
     }
+
 
     .menu-link {
         color: var(--second-text-color);
@@ -344,7 +383,7 @@ button:focus {
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
     .logo {
         margin-right: 76px;
     }
@@ -355,6 +394,11 @@ button:focus {
         margin-left: auto;
         gap: 40px;
     }
+
+    .menu-list-margin {
+        margin-left: 76px;
+        margin-right: 0;
+    }    
 }
 
 
@@ -362,7 +406,7 @@ button:focus {
 
 /* section 1 */
 .main-hero-image {
-    max-width: 1440px;
+    max-width: 1158px;
     height: 428px;
     margin: 0 auto;
     background-color: var(--second-text-color);
@@ -370,7 +414,7 @@ button:focus {
             url('../images/img-people-office-mobile.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     padding: 112px 0;
     text-align: center;
 }
@@ -440,25 +484,25 @@ button:focus {
     }
 }
 
-@media (min-device-pixel-ratio: 1) and (min-width: 1440px),
-(min-resolution: 96dpi) and (min-width: 1440px),
-(min-resolution: 1dppx) and (min-width: 1440px) {
+@media (min-device-pixel-ratio: 1) and (min-width: 1158px),
+(min-resolution: 96dpi) and (min-width: 1158px),
+(min-resolution: 1dppx) and (min-width: 1158px) {
     .main-hero-image {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url('../images/img-people-office-desktop.jpg');
     }
 }
 
-@media (min-device-pixel-ratio: 2) and (min-width: 1440px),
-(min-resolution: 192dpi) and (min-width: 1440px),
-(min-resolution: 2dppx) and (min-width: 1440px) {
+@media (min-device-pixel-ratio: 2) and (min-width: 1158px),
+(min-resolution: 192dpi) and (min-width: 1158px),
+(min-resolution: 2dppx) and (min-width: 1158px) {
     .main-hero-image {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url('../images/img-people-office-desktop@2x.jpg');
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
     .text-main-banner {
         font-size: 56px;
         max-width: 496px;
@@ -540,7 +584,7 @@ button:focus {
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
     .section {
         padding-top: 120px;
         padding-bottom: 120px;
@@ -567,10 +611,16 @@ button:focus {
         flex-basis: calc((100% - 72px) / 4);
     } 
 
-    .section-title {
+    .section-title,
+    .section-topic-desctop {
         font-weight: 500;
         font-size: 20px;
-        line-height: 1.2;
+        line-height: 1.2; 
+    }
+
+    .section-topic-desctop {
+        text-align: left;
+        margin-bottom: 8px;
     }
 
     .section-text {
@@ -585,7 +635,22 @@ button:focus {
     display: none;
 }
 
-.section-topic {
+
+@media screen and (max-width: 1439px) {
+    .section-topic {
+        color: var(--second-text-color);
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+}
+
+.section-topic-margin {
+    margin-bottom: 72px;
     color: var(--second-text-color);
     font-weight: 700;
     font-size: 36px;
@@ -596,7 +661,7 @@ button:focus {
     margin-bottom: 72px;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
     .main-title-wawd {
         display: flex;
         background-color: #FFFFFF;
@@ -640,7 +705,7 @@ button:focus {
 }
 
 .section-text {
-    font-weight: 400;
+    letter-spacing: 0;
 }
 
 .section-text-margin {
@@ -649,7 +714,6 @@ button:focus {
 
 .social-list {
     justify-content: center;
-    gap: 24px;
     margin-top: 8px;
 }
 
@@ -715,7 +779,7 @@ button:focus {
 }
 
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
     .social-list-item-brands {
         width: calc((100% - 120px) / 6);
     }
@@ -855,10 +919,14 @@ button:focus {
     .footer-block {
         flex-direction: row;
         flex-wrap: wrap;
-        margin-left: 92px;
+        max-width: 552px;
+        column-gap: 24px;
+        row-gap: 72px;
+        align-items: baseline;
     }
     .contact-subscribe-info {
         flex-direction: row;
+        gap: 24px;
     }
 
     .logo-link {
@@ -868,8 +936,44 @@ button:focus {
     .contact-title-subscribe {
         max-width: 264px;
     }
+
+    .footer-icons {
+        display: block;
+    }
+
+    .contant-from-subscribe-telegram-box {
+        display: block;
+    }
 }
 
+
+@media screen and (min-width: 1158px) {
+    .footer-block {
+        flex-wrap: nowrap;
+        max-width: 5000px;
+    }
+
+    .footer-description {
+        width: 264px;
+    }
+    
+    .footer-block {
+        gap: 0;
+    }
+
+    .footer-logo-description {
+        margin-right: 120px;
+    }
+
+    .footer-icons {
+        margin-right: 80px;
+    }
+
+    .contact-subscribe-info {
+        gap: 24px;
+    }
+
+}
 
 
 
@@ -942,7 +1046,7 @@ button:focus {
 /* ------ main ------ */ 
 
 /* .main-hero-image {
-    max-width: 1440px;
+    max-width: 1158px;
     height: 600px;
     margin: 0 auto;
     background-color: var(--second-text-color);
