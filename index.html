@@ -40,8 +40,8 @@
                 </ul>
             </nav>
 
-            <button type="button" class="menu-mobile-open-btn">
-                <svg class="menu-mobile-open-bnt-icon" width="32px" height="22px">
+            <button type="button" class="menu-mobile-open-btn js-open-menu">
+                <svg class="menu-mobile-open-bnt-icon" width="40px" height="40px">
                     <use class="menu-mobile-btn-icon-open" href="./images/icons.svg#icon-menu_open"></use>
                 </svg>
             </button>
@@ -58,15 +58,14 @@
             </address>
         </div>
 
-        <div class="mobile-menu">
-            <div class="container mobile-menu-container">
-                <button type="button" class="modal-close-btn mobile-menu-close-bnt" data-modal-close>
+        <div class="mobile-menu js-menu-container">
+            <div class="container mobile-menu-container js-close-menu">
+                <button type="button" class="mobile-menu-close-bnt ">
                     <svg class="menu-close-btn-icon" width="8px" height="8px">
                         <use href="./images/icons.svg#icon-close-black"></use>
                     </svg>
                 </button>
-                
-                <ul class="menu-list padding-none list">
+                <ul class="menu padding-none list">
                     <li class="menu-item">
                         <a href="./index.html" class="menu-item-link menu-link menu-item-link-hover link">Studio</a>
                     </li>
@@ -77,15 +76,61 @@
                         <a href="" class="menu-item-link menu-link link">Contacts</a>
                     </li>
                 </ul>
+
+                <div class="menu-mobile-window">
+                <ul class="menu list">
+                    <li class="menu-item">
+                        <a href="tel:+110001111111" class="contact-mail-tel link">+11 (000) 111-11-11</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="mailto:info@devstudio.com" class="contact-mail-tel-dop link">info@devstudio.com</a>
+                    </li>
+                </ul>
+
+                <ul class="social-list list">
+                    <li class="social-list-item">
+                        <a href="" class="social-list-link link">
+                            <svg class="social-lict-icon" aria-label="icon instagram" width="24" height="24">
+                
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-list-item">
+                        <a href="" class="social-list-link link">
+                            <svg class="social-lict-icon" aria-label="icon twitter" width="24" height="24">
+                
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-list-item">
+                        <a href="" class="social-list-link link">
+                            <svg class="social-lict-icon" aria-label="icon facebook" width="24" height="24">
+                
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-list-item">
+                        <a href="" class="social-list-link link">
+                            <svg class="social-lict-icon" aria-label="icon linkedin" width="24" height="24">
+                
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                </div>
             </div>
         </div>
 
     </header>
 
     <!-- MAIN -->
-    <!-- <main> -->
+    <main>
         <!-- Section 1 -->
-        <!-- <section class="main-hero-image">
+        <section class="main-hero-image">
             <div class="container">
                 <h1 class="text-main-banner">
                     Effective Solutions
@@ -93,16 +138,16 @@
                 </h1>
                 <button type="button" class="main-btm main-btm-text link" data-modal-open>Order Service</button> 
             </div>
-            </section> -->
+            </section>
 
 
         <!-- Section 2 -->
-        <!-- <section class="main-description section">
+        <section class="main-description section">
             <div class="container">
                 <h2 class="visually-hidden">Section1</h2>
-                <ul class="list-distination list"> -->
+                <ul class="list-distination list"> 
                     <!-- Feature 1 -->
-                    <!-- <li class="list-section-menu">
+                    <li class="list-section-menu">
                         <div class="section-menu-item">
                             <svg 
                             class="section-menu-icon"
@@ -120,10 +165,10 @@
                             problem to walk away with the perfect
                             and creative solution.
                         </p>
-                    </li> -->
+                    </li>
 
                     <!-- Feature 2 -->
-                    <!-- <li class="list-section-menu">
+                    <li class="list-section-menu">
                         <div class="section-menu-item">
                             <svg class="section-menu-icon" aria-label="icon is clock" width="64" height="64">
                         
@@ -135,10 +180,10 @@
                             Bring the key message to the brand's audience for
                             the best price within the shortest possible time.
                         </p>
-                    </li> -->
+                    </li>
 
                     <!-- Feature 3 -->
-                    <!-- <li class="list-section-menu">
+                    <li class="list-section-menu">
                         <div class="section-menu-item">
                             <svg class="section-menu-icon" aria-label="icon is diagram" width="64" height="64">
                         
@@ -150,10 +195,10 @@
                             Research and confirm brands that present the strongest
                             digital growth opportunities and minimize risk.
                         </p>
-                    </li> -->
+                    </li>
 
                     <!-- Feature 4 -->
-                    <!-- <li class="list-section-menu">
+                     <li class="list-section-menu">
                         <div class="section-menu-item">
                             <svg class="section-menu-icon" aria-label="icon is astronaut" width="64" height="64">
                         
@@ -168,10 +213,10 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
 
         <!-- Section 3 -->
-        <!-- <section class="main-title-wawd">
+        <section class="main-title-wawd">
             <div class="container">
                 <h2 class="section-topic">What are we doing</h2>
                 <ul class="list-distination list">
@@ -186,15 +231,15 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
 
         <!-- Section 4 -->
-        <!-- <section class="main-team section"> 
+        <section class="main-team section"> 
             <div class="container">
                 <h2  class="section-topic">Our Team</h2>
-                <ul class="list-distination  list"> -->
+                <ul class="list-distination  list"> 
                     <!-- Team Card 1 -->
-                    <!-- <li class="team-caption">
+                     <li class="team-caption">
                         <img class="section-img" src="./images/our_team/mark_guerrero.jpg" alt="Photo Mark Guerrero" width="264" height="260">
                         <div class="section-description">
                             <h3 class="section-title">Mark Guerrero</h3>
@@ -254,10 +299,10 @@
                                 </li>
                             </ul>
                         </div>
-                    </li> -->
+                    </li>
 
                     <!-- Team Card 2 -->
-                    <!-- <li class="team-caption">
+                    <li class="team-caption">
                         <img class="section-img" src="./images/our_team/tom_ford.jpg" alt="Photo Tom Ford" width="264" height="260">
                         <div class="section-description">
                             <h3 class="section-title">Tom Ford</h3>
@@ -317,10 +362,10 @@
                                 </li>
                             </ul>
                         </div>
-                    </li> -->
+                    </li>
 
                     <!-- Team Card 3 -->
-                    <!-- <li class="team-caption ">
+                    <li class="team-caption ">
                         <img class="section-img" src="./images/our_team/camila_garcia.jpg" alt="Photo Camila Garcia" width="264" height="260">
                         <div class="section-description">
                             <h3 class="section-title">Camila Garcia</h3>
@@ -380,10 +425,10 @@
                                 </li>
                             </ul>
                         </div>
-                    </li> -->
+                    </li>
 
                     <!-- Team Card 4 -->
-                    <!-- <li class="team-caption">
+                    <li class="team-caption">
                         <img class="section-img" src="./images/our_team/daniel_wilson.jpg" alt="Photo Daniel Wilson" width="264" height="260">
                         <div class="section-description">
                             <h3 class="section-title">Daniel Wilson</h3>
@@ -446,13 +491,13 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
 
         <!-- Section 5 -->
-        <!-- <section class="main-brands section">
+        <section class="main-brands section">
             <div class="container">
                 <h2 class="section-topic">Customers</h2>
-                <ul class="list-distination  list">
+                <ul class="list-distination list-distination-team  list">
                     <li class="social-list-item-brands">
                         <a href="" class="social-list-background">
                             <svg 
@@ -534,11 +579,11 @@
                 </ul>
             </div> 
         </section>
-    </main> -->
+    </main> 
 
 
     <!-- FOOTER -->
-    <!-- <footer class="page-footer">
+    <footer class="page-footer">
         <div class="container  footer-block"> 
             <div class="footer-logo-description">
                 <a href="./index.html" class="logo logo-link link">
@@ -625,7 +670,7 @@
         </div>
     </footer>
 
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <span></span>
             <p class="contact-title">Leave your contacts and we will call you back</p>
@@ -732,6 +777,7 @@
         </div>
     </div> -->
 <script src="./js/modal.js"></script>
+<script src="./js//mobile-menu.js"></script>
 </body>
 
 </html>
