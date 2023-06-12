@@ -743,7 +743,7 @@ button:focus {
 
 .social-list-item-brands {
     height: 88px;
-    width: 190px;
+    /* width: 190px; */
 }
 
 .social-list-background {
@@ -766,6 +766,18 @@ button:focus {
 
 .social-lict-icon-brands {
     fill: currentColor;
+}
+
+@media screen and (min-width: 428px) {
+    .social-list-item-brands {
+        width: 190px;
+    }
+}
+
+@media screen and (min-width: 381px) and (max-width: 427px) {
+    .social-list-item-brands {
+        width: 160px;
+    }
 }
 
 @media screen and (min-width: 768px) {
