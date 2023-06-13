@@ -5,7 +5,7 @@
     --main-font-family: 'Roboto', sans-serif;
     --second-font-family: 'Raleway', sans-serif;
     --line-height-family: 1.5;
-    --transition-duration-and-funk: 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    --transition-duration-and-funk: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list {
@@ -30,7 +30,7 @@ ol {
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
-} 
+}
 
 img {
     display: block;
@@ -63,6 +63,7 @@ body {
         justify-content: center;
     }
 }
+
 @media screen and (min-width: 428px) {
     .container {
         width: 428px;
@@ -129,12 +130,16 @@ button:focus {
         display: none;
     }
 
-     .social-list-margin {
+    .social-list-margin {
         display: flex;
         justify-content: space-between;
         margin-top: 48px;
         width: -webkit-fill-available;
         gap: 24px;
+    }
+
+    .section-topic {
+        text-align: center;
     }
 }
 
@@ -189,6 +194,10 @@ button:focus {
     padding-top: 80px;
     position: relative;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
 }
 
 .mobile-menu-close-bnt {
@@ -236,12 +245,17 @@ button:focus {
 
 
 .menu-mobile-window {
-    position: absolute;
-    bottom: 40px;
+    margin-bottom: 40px;
 }
 
 .contact-mail-tel {
     transition: color var(--transition-duration-and-funk);
+}
+
+@media screen and (max-width: 385px) {
+    .contact-mail-tel {
+        font-size: 24px;
+    }
 }
 
 .contact-mail-tel-dop {
@@ -303,10 +317,10 @@ button:focus {
     margin-bottom: 18px;
 } */
 
- .page-header {
+.page-header {
     border-bottom: 1px solid #e7e9fc;
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 
-        0px 1px 1px rgba(46, 47, 66, 0.16), 
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
@@ -319,7 +333,7 @@ button:focus {
     .menu-mobile-open-btn {
         display: none;
     }
-    
+
     .page-header {
         padding: 0;
     }
@@ -346,7 +360,6 @@ button:focus {
 
 
     .menu-link {
-        color: var(--second-text-color);
         font-weight: 500;
         font-size: 16px;
         letter-spacing: 0.02em;
@@ -355,10 +368,10 @@ button:focus {
 
     .menu-link:hover,
     .menu-link:focus {
-        color: var(--acsent-color);  
+        color: var(--acsent-color);
     }
-    
-    .menu-item-link-hover::after { 
+
+    .menu-item-link-hover::after {
         content: "";
         position: absolute;
         left: 0;
@@ -372,7 +385,7 @@ button:focus {
     .contact-mail-tel {
         color: var(--text-color);
         font-weight: 400;
-        font-size: 16px;
+        font-size: 12px;
         letter-spacing: 0.02em;
         font-style: normal;
         transition: color var(--transition-duration-and-funk);
@@ -398,7 +411,12 @@ button:focus {
     .menu-list-margin {
         margin-left: 76px;
         margin-right: 0;
-    }    
+    }
+
+     .contact-mail-tel {
+        font-size: 16px;  
+    }
+
 }
 
 
@@ -411,7 +429,7 @@ button:focus {
     margin: 0 auto;
     background-color: var(--second-text-color);
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-            url('../images/img-people-office-mobile.jpg');
+        url('../images/img-people-office-mobile.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -421,10 +439,10 @@ button:focus {
 
 @media (min-device-pixel-ratio: 2) and (max-width: 427px),
 (min-resolution: 192dpi) and (max-width: 427px),
-(min-resolution: 2dppx)  and (max-width: 427px) {
+(min-resolution: 2dppx) and (max-width: 427px) {
     .main-hero-image {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-         url('../images/img-people-office-mobile@2x.jpg');
+            url('../images/img-people-office-mobile@2x.jpg');
     }
 }
 
@@ -511,7 +529,8 @@ button:focus {
 
     .main-hero-image {
         padding: 188px 0;
-        height: auto;
+        height: 600px;
+        max-width: 1440px;
     }
 }
 
@@ -596,26 +615,26 @@ button:focus {
         justify-content: center;
         height: 112px;
         background-color: #F4F4FD;
-        border-radius: 4px; 
+        border-radius: 4px;
         margin-bottom: 8px;
     }
 
     .list-distination {
         display: flex;
-        flex-wrap:nowrap;
+        flex-wrap: nowrap;
         gap: 24px;
     }
 
-    .list-section-menu{
+    .list-section-menu {
         width: 0;
         flex-basis: calc((100% - 72px) / 4);
-    } 
+    }
 
     .section-title,
     .section-topic-desctop {
         font-weight: 500;
         font-size: 20px;
-        line-height: 1.2; 
+        line-height: 1.2;
     }
 
     .section-topic-desctop {
@@ -624,7 +643,7 @@ button:focus {
     }
 
     .section-text {
-        font-size: 400;
+        font-weight: 400;
     }
 
 }
@@ -636,7 +655,7 @@ button:focus {
 }
 
 
-@media screen and (max-width: 1439px) {
+@media screen and (max-width: 1157px) {
     .section-topic {
         color: var(--second-text-color);
         font-weight: 700;
@@ -644,7 +663,6 @@ button:focus {
         line-height: 1.11;
         letter-spacing: 0.02em;
         text-transform: capitalize;
-        text-align: center;
         margin-bottom: 8px;
     }
 }
@@ -671,16 +689,13 @@ button:focus {
 }
 
 /* section 4 */
-    .list-distination {
-        align-items: center;
-    }
+.list-distination {
+    align-items: center;
+    gap: 24px;
+}
 
 .main-team {
     background-color: #F4F4FD;
-}
-
-.list-distination {
-    gap: 24px;
 }
 
 .team-caption {
@@ -722,6 +737,7 @@ button:focus {
         justify-content: center;
         row-gap: 72px;
         column-gap: 24px;
+        align-items: normal;
     }
 
     .section-title {
@@ -796,7 +812,7 @@ button:focus {
     .social-list-item-brands {
         width: calc((100% - 120px) / 6);
     }
-    
+
     .social-list-background {
         width: 100%;
     }
@@ -937,6 +953,7 @@ button:focus {
         row-gap: 72px;
         align-items: baseline;
     }
+
     .contact-subscribe-info {
         flex-direction: row;
         gap: 24px;
@@ -969,7 +986,7 @@ button:focus {
     .footer-description {
         width: 264px;
     }
-    
+
     .footer-block {
         gap: 0;
     }
@@ -1056,7 +1073,7 @@ button:focus {
 } */
 /*======== /HEADER ========*/
 
-/* ------ main ------ */ 
+/* ------ main ------ */
 
 /* .main-hero-image {
     max-width: 1158px;
@@ -1356,7 +1373,7 @@ button:focus {
 
 .menu-content {
     justify-content: center;
-    padding :0;
+    padding: 0;
     margin-bottom: 72px;
     gap: 24px;
 }
@@ -1404,8 +1421,8 @@ button:focus {
 
 .gallery-list:hover,
 .gallery-list:focus {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
-        0px 1px 1px rgba(46, 47, 66, 0.16), 
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
@@ -1421,7 +1438,8 @@ button:focus {
     width: 100%;
     height: 100%;
     color: #F4F4FD;
-    background-color: #4D5AE5;;
+    background-color: #4D5AE5;
+    ;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -1436,6 +1454,7 @@ button:focus {
 .gallery-list:focus .overlay {
     transform: translate(0px, 0%);
 }
+
 /* ------ /main ------ */
 /* ======== /portfolio.html ======== */
 
@@ -1458,14 +1477,18 @@ button:focus {
     top: 50%;
     transform: translate(-50%, -50%);
     width: 408px;
-    min-height: 584px;
     padding: 72px 24px 24px 24px;
     background: #FCFCFC;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 
-        0px 1px 3px rgba(0, 0, 0, 0.12), 
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transition: transform var(--transition-duration-and-funk);
+    width: 95%;
+    max-width: 392px;
+    height: 95%;
+    max-height: 584px;
+    overflow: scroll;
 }
 
 .modal-close-btn {
@@ -1481,9 +1504,9 @@ button:focus {
     background-color: #E7E9FC;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    transition: background-color var(--transition-duration-and-funk), 
-    border var(--transition-duration-and-funk),
-    fill var(--transition-duration-and-funk);
+    transition: background-color var(--transition-duration-and-funk),
+        border var(--transition-duration-and-funk),
+        fill var(--transition-duration-and-funk);
 }
 
 .modal-close-btn:hover,
@@ -1494,6 +1517,12 @@ button:focus {
 
 .modal-close-icon {
     transition: fill var(--transition-duration-and-funk);
+}
+
+@media screen and (min-width: 768px) {
+    .modal {
+        height: 584px;
+    }
 }
 
 .contact-form-subscribe-title {
@@ -1528,7 +1557,7 @@ button:focus {
     letter-spacing: 0.04em;
     color: #FFFFFF;
     max-width: 165px;
-    
+
 }
 
 .contact-from-subscribe-btn-icon {
@@ -1542,7 +1571,7 @@ button:focus {
     pointer-events: none;
 }
 
-.contact-title{
+.contact-title {
     display: flex;
     justify-content: center;
     margin-bottom: 16px;
@@ -1578,7 +1607,7 @@ button:focus {
     transition: border-color var(--transition-duration-and-funk);
 }
 
-.contact-form-input:focus + .contact-from-input-icon {
+.contact-form-input:focus+.contact-from-input-icon {
     fill: #4D5AE5;
 }
 
@@ -1652,12 +1681,12 @@ button:focus {
     position: absolute;
 }
 
-.contact-form-checkbox:checked + .contact-from-field-checkbox-wrapper .content-from-link  {
+.contact-form-checkbox:checked+.contact-from-field-checkbox-wrapper .content-from-link {
     background-color: var(--acsent-color);
     border-radius: 2px;
     border: none;
     fill: #FFFFFF;
-    }
+}
 
 .contact-form-checkbox:checked+.contact-from-field-checkbox-wrapper .content-from-link .contact-form-checkmark-icon {
     opacity: 1;
@@ -1681,8 +1710,8 @@ button:focus {
     outline: auto;
 }
 
-.contact-form-checkmark-link{
-    color:#4d5ae5;
+.contact-form-checkmark-link {
+    color: #4d5ae5;
     text-decoration-line: underline;
 }
 
@@ -1696,10 +1725,10 @@ button:focus {
     border-radius: 2px;
     color: #4D5AE5;
     fill: transparent;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-        border 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1),
         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
+
 }
 
 .contant-from-submit {
@@ -1720,4 +1749,5 @@ button:focus {
     padding: 16px 64px;
 
 }
+
 /* ======== /backdrop ======== */
